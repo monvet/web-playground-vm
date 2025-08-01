@@ -123,6 +123,7 @@ a:visited {
     display: inline-block;
     position: absolute;
     right: 0; 
+    z-index: -1;
 }
 .shapes img{
     height: 25px;
