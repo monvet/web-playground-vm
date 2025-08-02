@@ -195,6 +195,9 @@ button{
     font-family: monospace;
     font-size: 16px;
 }
+button:hover{
+    cursor: pointer;
+}
 /* Animations */
 
 @keyframes rotateShape {
@@ -232,17 +235,34 @@ button{
 
 
 
-
-
 body{
     background-color: white;
 }
 
 .comment-box{
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 550px;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 15vh;
     background-color: black;
     filter: drop-shadow(rgb(160, 160, 160) 5px 5px 5px);
+}
+
+.big-star-1{
+    position: absolute;
+    top: -300px;
+    right: -500px;
+    z-index: -1;
+    animation: rotateShape 20s linear infinite;
+    filter: blur(10px);
+}
+.big-star-2{
+    position: absolute;
+    left: -300px; 
+    bottom: -300px;
+    width: 800px;
+    height: 800px;
+    z-index: -1;
+    animation: rotateShape 25s linear infinite;
+    filter: blur(10px);
 }
