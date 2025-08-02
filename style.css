@@ -40,6 +40,15 @@ footer{
     bottom: 0;
     height: 80px;
     background-color: black;
+    color: white;
+    font-family: monospace;
+    align-items: center;
+    display: flex;
+    position: relative;
+    font-weight: lighter;
+}
+footer div{
+    margin: auto;
 }
 .main-title{
     font-family: monospace;
@@ -179,6 +188,7 @@ footer{
 }
 .card:hover{
     cursor: pointer;
+    transform: scale(1.05); 
 }
 .ver-mas{
     margin: auto;
