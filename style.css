@@ -39,6 +39,7 @@ a:visited {
 footer{
     bottom: 0;
     height: 80px;
+    width: 100%;
     background-color: black;
     color: white;
     font-family: monospace;
@@ -80,6 +81,7 @@ footer div{
 .title-text{
     display: inline-block;
 }
+
 .sub{
     font-weight: 300;
     font-family: monospace;
@@ -249,13 +251,22 @@ body{
     background-color: white;
 }
 
+.comment-parent{
+    height: calc(100vh - 80px); 
+    position: relative;
+    overflow: hidden;
+}
+
 .comment-box{
     width: 600px;
     height: 550px;
     margin: auto;
-    margin-top: 15vh;
     background-color: black;
     filter: drop-shadow(rgb(160, 160, 160) 5px 5px 5px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjusts for the element's own dimensions */
 }
 
 .big-star-1{
